@@ -248,7 +248,7 @@
   flex-direction: column;
   gap: 30px;
   width: clamp(21.313rem, 1.127vw + 21.048rem, 22.063rem);
-  padding: 30px 39px;
+  padding: 30px;
 }
 
 .dialog:not([open]) {
@@ -301,6 +301,10 @@ dialog::backdrop {
   .icon-button {
     max-width: 28px;
     max-height: 28px;
+  }
+
+  .dialog[open] {
+    padding: 30px 39px;
   }
 
 }
